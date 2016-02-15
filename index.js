@@ -12,14 +12,19 @@ app.get('/', (req, res) => {
     res.send('hello playpen');
 });
 
-app.get('/mongoose', (req, res) => {
-    var foo = new users({
-        name: 'bill '
-    });
+app.get('/save-user', (req, res) => {
+    const user = new users({ name: 'bill' });
 
-    foo.save(err => {
+    user.save(err => {
         if (err) return res.status(500).send(err.stack);
         res.status(200).send('Succeeded');
+    });
+});
+
+app.get('/users', (req, res) => {
+    mongoose.model('users').find((err, users) => {
+        if (err) return res.status(500).send(err.stack);
+        res.status(200).send(users);
     });
 });
 
