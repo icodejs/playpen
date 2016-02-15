@@ -1,0 +1,17 @@
+.DS_Store
+.env
+
+lib-cov
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+*.swp
+*.todo
+*.rdb
+
+node_modules/
+dump/

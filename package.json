@@ -1,0 +1,23 @@
+{
+  "name": "playpen",
+  "version": "1.0.0",
+  "description": "A place to try out new code",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/icodejs/playpen.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/icodejs/playpen/issues"
+  },
+  "homepage": "https://github.com/icodejs/playpen#readme",
+  "engines": {
+    "node": "4.x"
+  }
+}
