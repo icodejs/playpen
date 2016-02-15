@@ -1,9 +1,14 @@
+const express = require('express');
+const app = express();
 
-const http = require('http');
-const hostname = '127.0.0.1';
-const port = process.env.PORT || 5000;
+app.set('port', (process.env.PORT || 5000));
 
-http.createServer((req, res) => {
-  res.writeHead(200, { 'Content-Type': 'text/plain' });
-  res.end('Hello World\n');
-}).listen(port);
+app.use(express.static(__dirname + '/public'));
+
+app.get('/', (req, res) => {
+  res.send('hello playpen');
+});
+
+app.listen(app.get('port'), () => {
+  console.log('Node app is running on port', app.get('port'));
+});

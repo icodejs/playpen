@@ -19,5 +19,9 @@
   "homepage": "https://github.com/icodejs/playpen#readme",
   "engines": {
     "node": "4.x"
+  },
+  "dependencies": {
+    "express": "^4.13.4",
+    "mongoose": "^4.4.3"
   }
 }
