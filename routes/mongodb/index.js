@@ -1,6 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
-const users = require('../../lib/mongoose/models/users');
+const users = require('../../lib/mongodb/models/users');
 const router = express.Router();
 
 router.get('/user/save', (req, res) => {
