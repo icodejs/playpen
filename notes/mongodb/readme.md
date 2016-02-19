@@ -1,5 +1,9 @@
 #Mongodb
 
+##Start locallly
+
+`$ mongod --config /usr/local/etc/mongod.conf`
+
 ##Mongoose
 
 ###Promises
