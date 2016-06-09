@@ -22,8 +22,11 @@
     "node": "4.x"
   },
   "dependencies": {
+    "body-parser": "^1.15.1",
     "express": "^4.13.4",
-    "mongoose": "^4.4.3"
+    "mongoose": "^4.4.3",
+    "nomnom": "^1.8.1",
+    "numeral": "^1.5.3"
   },
   "devDependencies": {
     "eslint": "^1.10.3",
