@@ -23,7 +23,10 @@
   },
   "dependencies": {
     "body-parser": "^1.15.1",
+    "emailjs-imap-client": "^2.0.2",
     "express": "^4.13.4",
+    "google-auth-library": "^0.9.8",
+    "googleapis": "^9.0.0",
     "mongoose": "^4.4.3",
     "nomnom": "^1.8.1",
     "numeral": "^1.5.3"
