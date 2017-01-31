@@ -5,9 +5,15 @@
     <title>Blob</title>
   </head>
   <body>
-    <h1>Blob</h1>
-    <script>
-      console.log('Hello Blob');
-    </script>
+  <div>
+    <input id="newlocalFILE" name="localfile" size="50" maxlength="100000" accept="video/* audio/*" type="file">
+
+    <br />
+    <br />
+    <video muted controls id="videoPlayer">
+      <source id="currentVID" src="http://html5multimedia.com/code/ch9/media/elephants-dream-medium.mp4">
+    </video>
+  </div>
+    <script type="text/javascript" src="dist/bundle.js"></script>
   </body>
 </html>

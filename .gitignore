@@ -13,6 +13,7 @@ lib-cov
 *.todo
 *.rdb
 
+public/dist/
 node_modules/
 dump/
 lib/mail/client_secret.json

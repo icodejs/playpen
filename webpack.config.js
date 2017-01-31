@@ -21,7 +21,7 @@ config.module = {
       cacheDirectory: true
     },
     include: [
-      path.join(__dirname, 'src')
+      path.join(__dirname, 'public/js')
     ]
   }, {
     test: /\.json$/,
@@ -32,7 +32,7 @@ config.module = {
 config.resolve = {
   modulesDirectories: ['node_modules'],
   extensions: ['', '.js', 'json'],
-  root: path.resolve('./src')
+  root: path.resolve('./public/js')
 };
 
 config.node = {
