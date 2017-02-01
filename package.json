@@ -27,11 +27,15 @@
     "body-parser": "^1.15.1",
     "emailjs-imap-client": "^2.0.2",
     "express": "^4.13.4",
+    "filereader": "^0.10.3",
     "google-auth-library": "^0.9.8",
     "googleapis": "^9.0.0",
+    "jsdom": "^9.9.1",
     "mongoose": "^4.4.3",
     "nomnom": "^1.8.1",
-    "numeral": "^1.5.3"
+    "numeral": "^1.5.3",
+    "request": "^2.79.0",
+    "request-promise": "^4.1.1"
   },
   "devDependencies": {
     "babel-cli": "^6.22.2",
