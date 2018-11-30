@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/icodejs/playpen#readme",
   "engines": {
-    "node": "7.x"
+    "node": "10.x"
   },
   "dependencies": {
     "body-parser": "^1.15.1",
@@ -35,7 +35,8 @@
     "nomnom": "^1.8.1",
     "numeral": "^1.5.3",
     "request": "^2.79.0",
-    "request-promise": "^4.1.1"
+    "request-promise": "^4.1.1",
+    "rxjs": "^6.3.3"
   },
   "devDependencies": {
     "babel-cli": "^6.22.2",
