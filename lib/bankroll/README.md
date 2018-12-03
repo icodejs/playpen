@@ -1,4 +1,5 @@
 ## Post
+
 ```bash
 curl -X POST -H "Content-Type: application/json" http://playpen.herokuapp.com/bankroll -d '
 {
@@ -10,6 +11,7 @@ curl -X POST -H "Content-Type: application/json" http://playpen.herokuapp.com/ba
 ```
 
 ## Response
+
 ```json
 {
   "today": "341.89",

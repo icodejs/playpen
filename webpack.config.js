@@ -1,7 +1,7 @@
 var path = require('path');
 var paths = {
   OUT: 'public/dist',
-  ENTRY_POINT: 'public/src/index.js',
+  ENTRY_POINT: 'public/src/index.js'
 };
 var config = {};
 
@@ -13,20 +13,21 @@ config.output = {
 };
 
 config.module = {
-  loaders: [{
-    test: /\.js?$/,
-    loader: 'babel-loader',
-    exclude: /node_modules/,
-    query: {
-      cacheDirectory: true
+  loaders: [
+    {
+      test: /\.js?$/,
+      loader: 'babel-loader',
+      exclude: /node_modules/,
+      query: {
+        cacheDirectory: true
+      },
+      include: [path.join(__dirname, 'public/js')]
     },
-    include: [
-      path.join(__dirname, 'public/js')
-    ]
-  }, {
-    test: /\.json$/,
-    loader: 'json-loader'
-  }]
+    {
+      test: /\.json$/,
+      loader: 'json-loader'
+    }
+  ]
 };
 
 config.resolve = {

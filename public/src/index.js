@@ -1,17 +1,17 @@
-const newlocalFILE = document.getElementById("newlocalFILE");
+const newlocalFILE = document.getElementById('newlocalFILE');
 
-newlocalFILE.addEventListener('change', (e) => {
-  var player = document.getElementById("videoPlayer");
-  var currentVID = document.getElementById("currentVID");
+newlocalFILE.addEventListener('change', e => {
+  var player = document.getElementById('videoPlayer');
+  var currentVID = document.getElementById('currentVID');
   var selectedLocalVID = e.target.files[0];
   // currentVID.setAttribute("src", URL.createObjectURL(selectedLocalVID));
   // player.load();
   // player.play();
 
-  createImage(selectedLocalVID, (image) => {
+  createImage(selectedLocalVID, image => {
     console.log(image);
-  })
-})
+  });
+});
 
 function createImage(file, cb) {
   var fileReader = new FileReader();
@@ -32,7 +32,9 @@ function createImage(file, cb) {
       var canvas = document.createElement('canvas');
       canvas.width = video.videoWidth;
       canvas.height = video.videoHeight;
-      canvas.getContext('2d').drawImage(video, 0, 0, canvas.width, canvas.height);
+      canvas
+        .getContext('2d')
+        .drawImage(video, 0, 0, canvas.width, canvas.height);
       var image = canvas.toDataURL();
 
       cb(image);
@@ -63,4 +65,3 @@ function createImage(file, cb) {
 
   fileReader.readAsArrayBuffer(file);
 }
-
