@@ -18,7 +18,7 @@ router.get('/users', (req, res) => {
 router.get('/user/save', (req, res) => {
   const user = new Users({
     name: 'Jakie',
-    age: 99
+    age: 99,
   });
 
   user.save(err => {
