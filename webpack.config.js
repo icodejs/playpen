@@ -1,7 +1,7 @@
 var path = require('path');
 var paths = {
   OUT: 'public/dist',
-  ENTRY_POINT: 'public/js/index.js',
+  ENTRY_POINT: 'public/src/index.js',
 };
 var config = {};
 
@@ -31,8 +31,8 @@ config.module = {
 
 config.resolve = {
   modulesDirectories: ['node_modules'],
-  extensions: ['', '.js', 'json'],
-  root: path.resolve('./public/js')
+  extensions: ['', '.js', 'jsx', 'json'],
+  root: path.resolve('./public/src')
 };
 
 config.node = {
