@@ -1,1 +1,2 @@
-require('./lib/create-app')();
+require('@babel/register');
+require('./lib/create-app').default();
