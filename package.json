@@ -6,7 +6,7 @@
   "scripts": {
     "test": "npm test",
     "start": "node index.js",
-    "dev": "nf run ./node_modules/.bin/nodemon index.js",
+    "dev": "./node_modules/.bin/nodemon index.js",
     "build": "webpack -d --display-error-details --config webpack.config.js",
     "build:watch": "webpack -d --display-error-details --config webpack.config.js --watch"
   },
