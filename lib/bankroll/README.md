@@ -5,7 +5,7 @@ curl -X POST -H "Content-Type: application/json" http://playpen.herokuapp.com/ba
 {
     "rate":400,
     "startTime":9,
-    "endTime":17
+    "endTime":17:30
 }
 '
 ```
